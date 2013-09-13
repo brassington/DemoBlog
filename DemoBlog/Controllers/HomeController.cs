@@ -1,5 +1,6 @@
 ﻿using DemoBlog.Adapter.Data;
 using DemoBlog.Adapter.Interfaces;
+using DemoBlog.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -42,6 +43,16 @@ namespace DemoBlog.Controllers
             ViewBag.Message = "Your contact page.";
 
             return View();
+        }
+
+        public ActionResult CreateBlogPost()
+        {
+            return View();
+        }
+
+        public ActionResult CreateBlogPost(ListPostsViewModel model)
+        {
+            return View(model);
         }
     }
 }

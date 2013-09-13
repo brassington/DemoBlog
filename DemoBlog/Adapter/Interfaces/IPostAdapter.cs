@@ -10,5 +10,6 @@ namespace DemoBlog.Adapter.Interfaces
     public interface IPostAdapter
     {
         ListPostsViewModel GetListPostsViewModel();
+        ListPostsViewModel CreateBlogPost(ListPostsViewModel model);
     }
 }

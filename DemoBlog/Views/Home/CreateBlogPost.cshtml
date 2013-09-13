@@ -1,0 +1,20 @@
+﻿@model DemoBlog.Models.ListPostsViewModel
+
+@{
+    ViewBag.Title = "CreateBlogPost";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>CreateBlogPost</h2>
+
+@using (Html.BeginForm(new { ReturnUrl = ViewBag.ReturnUrl })) {
+@Html.LabelFor(m => m.Post.Title)
+@Html.TextBoxFor(m => m.Post.Title)
+
+@Html.LabelFor(m => m.Post.Description)
+@Html.TextBoxFor(m => m.Post.Description)
+
+<input type="submit value="Submit" />
+}
+
+
