@@ -47,11 +47,15 @@ namespace DemoBlog.Controllers
 
         public ActionResult CreateBlogPost()
         {
-            return View();
+            ListPostsViewModel model = new ListPostsViewModel();
+            model.Post = new Data.Post();
+            return View(model);
         }
 
+        [HttpPost]
         public ActionResult CreateBlogPost(ListPostsViewModel model)
         {
+            model = _postAdapter.CreateBlogPost(model);
             return View(model);
         }
     }

@@ -30,7 +30,7 @@ namespace DemoBlog.Adapter.Data
                 Post post = model.Post;
 
                 post.Title = "New Blog Post Title";
-                post.Description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit fusce vel sapien elit in malesuada semper mi, id sollicitudin urna fermentum."
+                post.Description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit fusce vel sapien elit in malesuada semper mi, id sollicitudin urna fermentum.";
 
                 db.Posts.Add(post);
                 db.SaveChanges();

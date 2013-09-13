@@ -13,5 +13,11 @@ namespace DemoBlog.Adapter.Mock
         {
             throw new NotImplementedException();
         }
+
+
+        public Models.ListPostsViewModel CreateBlogPost(Models.ListPostsViewModel model)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
